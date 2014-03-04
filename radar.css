@@ -7,6 +7,8 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
     overflow: hidden;
+    width: 320px;
+    height: 320px;
   
     -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
     }
