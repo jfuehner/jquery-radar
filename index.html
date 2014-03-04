@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>jquery-radar by jfuehner</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>jquery-radar</h1>
+        <h2>A jQuery plugin providing a radar sweep animation.</h2>
+        <a href="https://github.com/jfuehner/jquery-radar" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
+<a name="jquery-radar" class="anchor" href="#jquery-radar"><span class="octicon octicon-link"></span></a>jQuery-Radar</h2>
+
+<p>A jQuery plugin providing a radar sweep animation. Provides the ability to publish X/Y coordinate points for them to appear within the radar sweep animation.</p>
+
+<h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>The plugin is dependent upon <a href="http://jquery.com">jQuery</a> and <a href="http://underscorejs.org">Underscore</a>.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Include the radar CSS and JavaScript files within your page in addition to the dependency script files:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"radar.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"radar.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h3>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h3>
+
+<p>A default radar; simply assign the <em>radar</em> CSS class to an HTML element. The default size is 320px width / 320px height.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<p>Or... Specify a height/width different from the default.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radar"</span> <span class="na">style=</span><span class="s">"width: 120px; height: 120px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<h3>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>JavaScript</h3>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">radars</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">".radar"</span><span class="p">).</span><span class="nx">radar</span><span class="p">().</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">points</span> <span class="o">=</span>  <span class="p">[</span>
+      <span class="p">{</span> <span class="nx">X</span><span class="o">:</span> <span class="mf">33.73834818019053</span><span class="p">,</span> <span class="nx">Y</span><span class="o">:</span> <span class="mf">17.133526305855796</span> <span class="p">},</span> 
+      <span class="p">{</span> <span class="nx">X</span><span class="o">:</span> <span class="mf">41.04449004559928</span><span class="p">,</span> <span class="nx">Y</span><span class="o">:</span> <span class="mf">23.090547816002868</span> <span class="p">},</span> 
+      <span class="p">{</span> <span class="nx">X</span><span class="o">:</span> <span class="mf">53.450948245470364</span><span class="p">,</span> <span class="nx">Y</span><span class="o">:</span> <span class="mf">58.23568471317653</span> <span class="p">}</span>
+    <span class="p">];</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s2">"radar"</span><span class="p">).</span><span class="nx">updatePoints</span><span class="p">(</span><span class="nx">points</span><span class="p">);</span>    
+  <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h2>
+
+<p>Jason Fuehner (<a href="https://github.com/jfuehner" class="user-mention">@jfuehner</a>)</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/jfuehner/jquery-radar/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/jfuehner/jquery-radar/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/jfuehner/jquery-radar"></a> is maintained by <a href="https://github.com/jfuehner">jfuehner</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
