@@ -20,9 +20,9 @@
   "url": ""
 }],
 "bugs": "https://github.com/jfuehner/jquery-radar/issues",
-"homepage": "https://github.com/jfuehner/jquery-radar",
-"docs": "https://github.com/jfuehner/jquery-radar",
-"download": "",
+"homepage": "http://jfuehner.github.io/jquery-radar",
+"docs": "http://jfuehner.github.io/jquery-radar",
+"download": "https://github.com/jfuehner/jquery-radar/zipball/master",
 "dependencies": {
     "jquery": ">=1.10",
     "underscore": ">=1.6"  
