@@ -1,0 +1,34 @@
+{
+    "name": "radar",
+    "title": "jQuery Radar",
+    "description": "jQuery plugin providing a radar sweep animation. Publish X/Y coordinate points to the plugin for them to appear.",
+    "keywords": [
+        "radar",
+        "animation"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Jason Fuehner",
+        "email": "jason@fuehner.com"
+    },
+    "maintainers": [
+        {
+            "name": "Jason Fuehner",
+            "email": "jason@fuehner.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jfuehner/jquery-radar/blob/master/LICENSE.md"
+        }
+    ],
+    "bugs": "https://github.com/jfuehner/jquery-radar/issues",
+    "homepage": "http://jfuehner.github.io/jquery-radar",
+    "docs": "http://jfuehner.github.io/jquery-radar",
+    "download": "https://github.com/jfuehner/jquery-radar/zipball/master",
+    "dependencies": {
+        "jquery": ">=1.10",
+        "underscore": ">=1.6"
+    }
+}
